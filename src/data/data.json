@@ -1,0 +1,79 @@
+{
+   "domainID" : 1730123,
+   "generatedSelectors" : {
+      "priceSels" : [
+         {
+            "selector":"//h1[contains(@class, 'wsm-prod-title')]",
+            "info":{
+               "suc_rate":1.0,
+               "parsed_rate":0.8476190476190476,
+               "suc_count":178,
+               "parsed_count":178,
+               "total":210
+            }
+         },
+         {
+            "selector":"//h1[contains(@itemprop, 'name')]",
+            "info":{
+               "suc_rate":1.0,
+               "parsed_rate":0.8476190476190476,
+               "suc_count":178,
+               "parsed_count":178,
+               "total":210
+            }
+         },
+         {
+            "selector":"//h1[contains(@class, 'wsm-prod-title') and contains(@itemprop, 'name') ]",
+            "info":{
+               "suc_rate":1.0,
+               "parsed_rate":0.8476190476190476,
+               "suc_count":178,
+               "parsed_count":178,
+               "total":210
+            }
+         },
+         {
+            "selector":"//div[contains(@id, 'wsm-prod-info')]//h1",
+            "info":{
+               "suc_rate":1.0,
+               "parsed_rate":0.8476190476190476,
+               "suc_count":178,
+               "parsed_count":178,
+               "total":210
+            }
+         },
+         {
+            "selector":"//div[contains(@id, 'wsm-prod-info')]//h1[contains(@class, 'wsm-prod-title')]",
+            "info":{
+               "suc_rate":1.0,
+               "parsed_rate":0.8476190476190476,
+               "suc_count":178,
+               "parsed_count":178,
+               "total":210
+            }
+         },
+         {
+            "selector":"//div[contains(@id, 'wsm-prod-info')]//h1[contains(@itemprop, 'name')]",
+            "info":{
+               "suc_rate":1.0,
+               "parsed_rate":0.8476190476190476,
+               "suc_count":178,
+               "parsed_count":178,
+               "total":210
+            }
+         },
+         {
+            "selector":"//div[contains(@id, 'wsm-prod-info')]//h1[contains(@class, 'wsm-prod-title') and contains(@itemprop, 'name') ]",
+            "info":{
+               "suc_rate":1.0,
+               "parsed_rate":0.8476190476190476,
+               "suc_count":178,
+               "parsed_count":178,
+               "total":210
+            }
+         }
+      ],
+      "titleSels" : [],
+      "availSels" : []
+   }
+}
