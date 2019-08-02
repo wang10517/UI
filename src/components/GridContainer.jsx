@@ -75,5 +75,9 @@ export default class GridContainer extends React.Component {
 }
 
 GridContainer.propTypes = {
-	
+	getPathName : PropTypes.func, 
+	linkCol : PropTypes.string,
+	initSort : PropTypes.string.isRequired,
+	headerInfo : PropTypes.array.isRequired,
+	data : PropTypes.array.isRequired
 }

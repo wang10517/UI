@@ -16,6 +16,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import { Link } from 'react-router-dom';
 import ReactSearchBox from 'react-search-box';
+import PropTypes from 'prop-types';
 
 const drawerWidth = 240;
 
@@ -172,7 +173,7 @@ const PersistentDrawerLeft = (props) => {
 					</IconButton>
 				</div>
 				<Divider />
-        {/* // Parse every tab here */}
+				{/* // Parse every tab here */}
 				<List>{props.sideItems.map((text, index) => getLinkedTab(text, props.id))}</List>
 			</Drawer>
 			<main
@@ -188,3 +189,10 @@ const PersistentDrawerLeft = (props) => {
 };
 
 export default PersistentDrawerLeft;
+
+PersistentDrawerLeft.propTypes = {
+	handleSearch: PropTypes.func.isRequired,
+	sideItems: PropTypes.array.isRequired,
+	title: PropTypes.string.isRequired,
+	id: PropTypes.string.isRequired
+};

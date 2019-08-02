@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SideBar from '../components/SideBar';
 import GridContainer from '../components/GridContainer';
 import { Ripple } from '@progress/kendo-react-ripple';
+import PropTypes from 'prop-types';
 
 const filterData = (data, searchField) => {
 	return data.filter((item) => {
@@ -41,3 +42,13 @@ const ListSearchBar = (props) => {
 };
 
 export default ListSearchBar;
+
+ListSearchBar.propTypes = {
+	data: PropTypes.array.isRequired,
+	title: PropTypes.string.isRequired,
+	sideItems: PropTypes.array.isRequired,
+	headerInfo: PropTypes.array.isRequired,
+	getPathName: PropTypes.func,
+	linkCol: PropTypes.string,
+	initSort: PropTypes.string.isRequired
+};

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 import 'react-web-tabs/dist/react-web-tabs.css';
+import PropTypes from 'prop-types';
 
 const TabContainer = (props) => {
 	return (
@@ -18,3 +19,9 @@ const TabContainer = (props) => {
 };
 
 export default TabContainer;
+
+TabContainer.propTypes = {
+	priceView: PropTypes.element.isRequired,
+	titleView: PropTypes.element.isRequired,
+	availView: PropTypes.element.isRequired
+};

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import SideBar from '../components/SideBar';
 import TabContainer from '../components/TabContainer';
 import GridContainer from '../components/GridContainer';
-
+import PropTypes from 'prop-types';
 import { Ripple } from '@progress/kendo-react-ripple';
 
 // Hash function used to generate unique key for each selector
@@ -79,3 +79,16 @@ const TabListSearchBar = (props) => {
 };
 
 export default TabListSearchBar;
+
+TabListSearchBar.propTypes = {
+	id: PropTypes.string.isRequired,
+	title: PropTypes.string.isRequired,
+	sideItems: PropTypes.array.isRequired,
+	headerInfo: PropTypes.array.isRequired,
+	priceData: PropTypes.array.isRequired,
+	titleData: PropTypes.array.isRequired,
+	availData: PropTypes.array.isRequired,
+	initSort: PropTypes.string.isRequired,
+	getPathName: PropTypes.func,
+	linkCol: PropTypes.string
+};

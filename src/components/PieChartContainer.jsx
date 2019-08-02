@@ -1,5 +1,7 @@
 import React from 'react'
 import { Chart } from "react-google-charts";
+import PropTypes from "prop-types";
+
 
 const pieChart = (props) =>  (
   <Chart
@@ -16,3 +18,8 @@ const pieChart = (props) =>  (
 );
 
 export default pieChart;
+
+pieChart.propTypes = {
+  title : PropTypes.string,
+	data : PropTypes.array.isRequired
+}
