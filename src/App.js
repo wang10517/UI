@@ -15,6 +15,7 @@ class App extends Component {
   render() {
     let cookie = Cookies.get('loggedIn'); 
     
+    // If no cookie present, route to login page with refresh function to be called once the login is done
     if (cookie !== "true") {
       return <Auth refresh={() => this.setState({loggedIn : true})} />;
     } 

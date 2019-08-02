@@ -6,6 +6,7 @@ import "./HomePage.css";
 
 const HomePage = Props => {
 
+  // Headers on hompage
   let headerInfo = [
     {
       field: "domainID",
@@ -44,6 +45,7 @@ const HomePage = Props => {
     }
   ];
 
+  // Retrieve link to the existing selector page. Used later in forming linked cells
   const getPathName = domainInfo => {
     let id = domainInfo["domainID"].toString();
     let pathName = `/domainPage/${id}/existingSelectors`;

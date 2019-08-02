@@ -9,6 +9,7 @@ const GeneratedSelectors = (props) => {
 	let titleSels = data['generatedSelectors']['titleSels'];
 	let availSels = data['generatedSelectors']['availSels'];
 
+	// Headerinfo to be displayed
 	let headerInfo = [
 		{
 			field: 'selector',
@@ -42,6 +43,7 @@ const GeneratedSelectors = (props) => {
 		}
 	];
 
+	// Format the raw data to match with headerinfo
 	let processData = (results) => {
 		return results.map((item) => {
 			return {

@@ -1,12 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TabListSearchBar from '../../../templates/TabListSearchBar';
 import data from '../../../data/processedData';
 
+// This page displays the existing selectors pulled from database
+
 const ExistingSelectorPage = (props) => {
+	// Retrieve the proper link to the selector page. Used later in forming linked cells
 	let getPathName = (selInfo) => {
 		let pathName = `/domainPage/${domainID}/existingSelectors/${selInfo['category']}/${selInfo['id']}`;
 		return {
 			pathname: pathName,
+			// Passing the selector to the selector page as part of state object
 			state: { sel: selInfo['selector'] }
 		};
 	};
@@ -19,6 +23,7 @@ const ExistingSelectorPage = (props) => {
 	let availResults = info['availability_results'];
 	let totalUrls = info['parsed_doms'];
 
+	// Headers to be displayed in this page
 	let headerInfo = [
 		{
 			field: 'selector',
@@ -42,6 +47,7 @@ const ExistingSelectorPage = (props) => {
 		}
 	];
 
+	// Format the data to match with the header info
 	let processData = (results, category) => {
 		return Object.keys(results).map((sel) => {
 			let activeUrls = Object.keys(results[sel]).length;
@@ -56,6 +62,7 @@ const ExistingSelectorPage = (props) => {
 		});
 	};
 
+	// Pass down the data to griddata with search bar and side tabs
 	return (
 		<TabListSearchBar
 			id={domainID}

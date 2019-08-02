@@ -5,6 +5,7 @@ import GridContainer from '../components/GridContainer';
 
 import { Ripple } from '@progress/kendo-react-ripple';
 
+// Hash function used to generate unique key for each selector
 String.prototype.hashCode = function() {
 	var hash = 0,
 		i,
